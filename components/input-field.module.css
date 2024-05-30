@@ -1,0 +1,68 @@
+.inputField {
+  /* background-color: aqua; */
+  /* border: 2px dashed darkmagenta; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
+
+  order: 10;
+}
+
+.inputField > label {
+  overflow: hidden;
+  margin-bottom: 5px;
+  font-weight: 900;
+  font-size: 11px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+}
+
+.inputField > input {
+  height: 38px;
+  width: 100%;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.calculateButton {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+
+  /* right: 10px; */
+  width: 36px;
+  height: 36px;
+  margin: auto;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  /* border: 1px solid goldenrod; */
+  /* outline: none !important; */
+  background: #fff;
+
+  /* background-size: 24px 24px;
+  background: url(https://cp.trendagent.ru/images/9d54e305855fca225b7d.svg) no-repeat; */
+}
+
+.calculateButton::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 24px;
+  height: 24px;
+  /* background-size: auto; */
+  background-size: 24px 24px;
+  background: url(https://cp.trendagent.ru/images/9d54e305855fca225b7d.svg) no-repeat;
+}
+
+
+.inputField:nth-child(3),
+.inputField:nth-child(4) {
+  order: 1;
+}

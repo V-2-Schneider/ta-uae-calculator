@@ -1,0 +1,70 @@
+.calculateAllButton {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
+
+  order: 6;
+}
+
+.calculateAllButton > label {
+  visibility: hidden;
+  overflow: hidden;
+  margin-bottom: 5px;
+  font-weight: 900;
+  font-size: 11px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+}
+
+.calculateAllButton > button {
+  height: 38px;
+  width: 60%;
+  width: 100%;
+  margin: auto;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #adadad;
+  border: 0px;
+  border-radius: 2px;
+  background-color: #fff;
+  cursor: pointer;
+
+  background-color: hsl(240, 34%, 88%);
+}
+.calculateAllButton:hover > button {
+  background-color: hsl(240, 34%, 78%);
+}
+
+.calculateButton {
+  position: absolute;
+  right: 0;
+  bottom: 7px;
+
+  right: 10px;
+  width: 30px;
+  height: 24px;
+  margin: auto;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  /* border: 1px solid goldenrod; */
+  /* outline: none !important; */
+  background: #fff;
+
+  /* background-size: 24px 24px;
+  background: url(https://cp.trendagent.ru/images/9d54e305855fca225b7d.svg) no-repeat; */
+}
+
+.calculateButton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+  background-size: auto;
+  background-size: 24px 24px;
+  background: url(https://cp.trendagent.ru/images/9d54e305855fca225b7d.svg) no-repeat;
+}
