@@ -22,6 +22,7 @@ export default function calculateInput(
 
     if (value.includes(' ')) {
         return (value
+            .replaceAll(/  +/g, ' ')
             .split(' ')
             .map((chunk) => calculateInput(chunk, selectedUnit))
             .reduce((a, b) => `${a}+${b}`)

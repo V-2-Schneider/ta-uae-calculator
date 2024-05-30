@@ -23,7 +23,7 @@ export default function validateInput(value: string, selectedUnit: UnitsType) {
       .replaceAll('..', '.')
       .replaceAll(/[[xXчЧхХ]/g, '*')
       .replaceAll('**', '*')
-      .replaceAll('  ', ' ')
+      // .replaceAll('  ', ' ')
       .replace(/^$/, '0')
       .replace(/^\./, '0\.')
     )
