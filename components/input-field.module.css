@@ -31,12 +31,12 @@
 
 .calculateButton {
   position: absolute;
-  right: 1px;
-  bottom: 1px;
+  right: 2px;
+  bottom: 2px;
 
   /* right: 10px; */
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   margin: auto;
   padding: 0;
   cursor: pointer;
