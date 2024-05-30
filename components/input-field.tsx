@@ -19,7 +19,9 @@ export default function InputField({
   selectedUnit,
   calculateAllParticipant
 }: InputFieldProps) {
-  const [inputValue, setInputValue] = useState('0')
+  const [inputValue, setInputValue] = useState(
+    localStorage.getItem(id) || '0'
+  )
 
   const calculate = () => {
     console.log('calculate all', inputValue, id, label)
@@ -32,6 +34,10 @@ export default function InputField({
     }
 
     return () => document.removeEventListener('calculateAll', calculate)
+  }, [inputValue])
+
+  useEffect(() => {
+    localStorage.setItem(id, inputValue)
   }, [inputValue])
 
   return (
