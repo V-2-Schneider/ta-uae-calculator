@@ -84,7 +84,7 @@ function Option({
       )}
       onClick={() => {
         setSelectedUnit(unit)
-        localStorage.setItem('selectedItem', unit)
+        localStorage.setItem('selectedUnit', unit)
         setIsExpanded(false)
       }}
 

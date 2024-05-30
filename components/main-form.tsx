@@ -18,7 +18,7 @@ export default function MainForm() {
   ] = useState<UnitsType>('' as UnitsType)
 
   useEffect(() => {
-    setSelectedUnit(localStorage.getItem('selectedItem') as UnitsType || 'm')
+    setSelectedUnit(localStorage.getItem('selectedUnit') as UnitsType || 'm')
   }, [])
 
   return (

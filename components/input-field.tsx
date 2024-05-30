@@ -20,7 +20,7 @@ export default function InputField({
   calculateAllParticipant
 }: InputFieldProps) {
   const [inputValue, setInputValue] = useState(
-    localStorage.getItem(id) || '0'
+    typeof window !== 'undefined' ? localStorage.getItem(id) || '0' : '0'
   )
 
   const calculate = () => {
@@ -39,6 +39,10 @@ export default function InputField({
   useEffect(() => {
     localStorage.setItem(id, inputValue)
   }, [inputValue])
+
+  useEffect(() => {
+    setInputValue(localStorage.getItem(id) || inputValue)
+  }, [])
 
   return (
     <div className={styles.inputField}>
